@@ -1,0 +1,9 @@
+# Create a RAMDISK and mount it at /tmp
+
+mkrd -m 2 -s 512 1024
+mkfatfs /dev/ram2
+mount -t vfat /dev/ram2 /tmp
+
+mount -t procfs /proc
+mount -t binfs  /bin
+mount -t vfat /dev/mmcsd0 /mnt/sdcard
