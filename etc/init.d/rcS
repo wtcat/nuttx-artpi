@@ -1,0 +1,4 @@
+ifup wlan0
+usleep 3000
+wapi psk wlan0 wt120408051103 3
+wapi essid wlan0 WIFI@Here 1
